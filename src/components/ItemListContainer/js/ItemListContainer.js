@@ -1,7 +1,7 @@
-const ItemListContainer = () => {
+import React from 'react';
 
-    alert('Hola');
-
+const ItemListContainer = ({ mensaje }) => {
+    return <h1>{mensaje}</h1>;
 }
 
 export default ItemListContainer;

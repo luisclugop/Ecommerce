@@ -1,11 +1,12 @@
+import React from 'react';
 import '../css/CartWidget.css';
 import { AiOutlineShopping } from "react-icons/ai";
-import ItemListContainer from '../../ItemListContainer/js/ItemListContainer'
 
 const CartWidget = () => {
+    
     return (
         <div className='cartWidget'>
-            <div onClick={ItemListContainer}>
+            <div>
                 <AiOutlineShopping />           
                 <span>0</span>
             </div>
