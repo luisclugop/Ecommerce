@@ -1,0 +1,41 @@
+.itemCount{
+    display: flex;
+    height: auto;
+    width: 250px;
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.itemCount span{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.itemCount .btnLeft{
+    float: left;
+    width:25%;
+}
+
+.itemCount .btnMiddle{
+    float: left;
+    width:50%;
+}
+
+.itemCount .btnRight{
+    float: right;
+    width:25%;
+}
+
+.btnItemCount{
+    height: auto;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
