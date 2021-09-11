@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "../../Button/js/Button";
 import '../css/ItemCount.css';
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
 // class ItemCount extends Component {
 //     constructor(){
@@ -39,10 +40,10 @@ import '../css/ItemCount.css';
 
 const ItemCount = () => {
 
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(1);
 
     const decrementCount = () => {
-        if(count <= 0) {
+        if(count <= 1) {
         console.log('No hay productos que eliminar')
         } else{
         setCount(count - 1)
@@ -50,15 +51,19 @@ const ItemCount = () => {
     }
 
     const incrementCount = () => {
-        setCount(count + 1);
+        if(count >= 10) {
+            console.log('No hay productos que eliminar')
+        } else{
+            setCount(count + 1);
+        }
     }
 
     return(
         <>
             <div className="itemCount">
-                <Button className="btnLeft" title="-" task={ () => decrementCount() } />
+                <Button className="btnLeft" icon={<AiOutlineMinus />} task={ () => decrementCount() } />
                 <span className="btnMiddle">{ count }</span>
-                <Button className="btnRight" title="+" task={ () => incrementCount() } />
+                <Button className="btnRight" icon={<AiOutlinePlus />} task={ () => incrementCount() } />
             </div>
             <div className="btnItemCount">
                 <Button title="Agregar al carrito" task={ () => { console.log("Boton Agregar") } }/>

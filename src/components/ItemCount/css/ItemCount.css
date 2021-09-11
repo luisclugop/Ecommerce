@@ -9,6 +9,8 @@
     align-items: center;
     padding: 10px;
     text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .itemCount span{

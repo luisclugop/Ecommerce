@@ -3,10 +3,10 @@ import '../css/Button.css';
 
 class Button extends Component {
     render(){
-        let { title, task } = this.props;
+        let { title, task, icon } = this.props;
         return(
             <a className="button1" onClick={ task }>
-                { title }
+                { title } { icon }
             </a>
         );
     }   
