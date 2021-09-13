@@ -1,9 +1,8 @@
 .itemCount{
     display: flex;
-    height: auto;
-    width: 250px;
-    background-color: #ffffff;
-    border: 1px solid #c0c0c0;
+    width: auto;
+    background-color: none;
+    border: 1px solid #eee;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -35,9 +34,78 @@
 
 .btnItemCount{
     height: auto;
-    width: 250px;
+    width: auto;
     justify-content: center;
     align-items: center;
     padding: 10px;
     text-align: center;
+}
+
+@media only screen and (max-width: 500px) { 
+    .itemCount{
+        width: auto;
+        padding: 5px;
+        font-size: 8px;
+    }
+
+    .btnItemCount{
+        font-size: 6px;
+        padding: 2px;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 500px) {
+    .itemCount{
+        width: auto;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .btnItemCount{
+        font-size: 8px;
+        padding: 2px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .itemCount{
+        width: auto;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .btnItemCount{
+        font-size: 8px;
+        padding: 2px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .itemCount{
+        width: auto;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .btnItemCount{
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .itemCount{
+        width: auto;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .btnItemCount{
+        font-size: 12px;
+        padding: 10px;
+    }
 }

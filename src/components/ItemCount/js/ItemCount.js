@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Button from "../../Button/js/Button";
 import '../css/ItemCount.css';
-import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
 // class ItemCount extends Component {
 //     constructor(){
@@ -61,9 +60,9 @@ const ItemCount = () => {
     return(
         <>
             <div className="itemCount">
-                <Button className="btnLeft" icon={<AiOutlineMinus />} task={ () => decrementCount() } />
+                <Button className="btnLeft" title="-" task={ () => decrementCount() } />
                 <span className="btnMiddle">{ count }</span>
-                <Button className="btnRight" icon={<AiOutlinePlus />} task={ () => incrementCount() } />
+                <Button className="btnRight" title="+" task={ () => incrementCount() } />
             </div>
             <div className="btnItemCount">
                 <Button title="Agregar al carrito" task={ () => { console.log("Boton Agregar") } }/>

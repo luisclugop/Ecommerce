@@ -1,11 +1,14 @@
 import React from 'react';
-import ItemCount from '../../ItemCount/js/ItemCount';
+import ItemList from '../../ItemList/js/ItemList';
+
 
 const ItemListContainer = ({ mensaje }) => {
     return(
         <>
-            <h1>{mensaje}</h1>
-            <ItemCount />
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <ItemList />
+            </div>
+            { <h1>{mensaje}</h1> }
         </>
     );
     
