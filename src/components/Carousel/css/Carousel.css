@@ -1,0 +1,112 @@
+.CarouselDiv{
+    margin: 0;
+    padding: 0;
+}
+
+.CarouselItem{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+
+.CarouselItem .CarouselItemTittle{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 5px #dfdfdf;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.CarouselItem .CarouselItemDescription{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 500px) { 
+    .CarouselItem{
+        height: 250px;
+    }
+
+    .CarouselItem .CarouselItemTittle{
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    
+    .CarouselItem .CarouselItemDescription{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+}
+
+/* Extra small devices (phones, 500px and down) */
+@media only screen and (min-width: 500px) {
+    .CarouselItem{
+        height: 300px;
+    }
+
+    .CarouselItem .CarouselItemTittle{
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+    
+    .CarouselItem .CarouselItemDescription{
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .CarouselItem{
+        height: 400px;
+    }
+
+    .CarouselItem .CarouselItemTittle{
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+    
+    .CarouselItem .CarouselItemDescription{
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .CarouselItem{
+        height: 500px;
+    }
+
+    .CarouselItem .CarouselItemTittle{
+        margin-bottom: 25px;
+        font-size: 40px;
+    }
+    
+    .CarouselItem .CarouselItemDescription{
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .CarouselItem{
+        height: 600px;
+    }
+
+    .CarouselItem .CarouselItemTittle{
+        margin-bottom: 30px;
+        font-size: 45px;
+    }
+    
+    .CarouselItem .CarouselItemDescription{
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+}
