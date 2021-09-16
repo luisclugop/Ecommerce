@@ -1,6 +1,7 @@
 import React from 'react';
 import ItemList from '../../ItemList/js/ItemList';
 import CarouselEcommerce from '../../Carousel/js/Carousel';
+import ItemDetailContainer from '../../ItemDetailContainer/js/ItemDetailContainer';
 
 
 const ItemListContainer = ({ mensaje }) => {
@@ -11,6 +12,7 @@ const ItemListContainer = ({ mensaje }) => {
                 <ItemList />
             </div>
             { <h1>{mensaje}</h1> }
+            <ItemDetailContainer />
         </>
     );
     

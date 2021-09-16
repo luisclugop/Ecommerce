@@ -1,0 +1,12 @@
+.itemDetailContainer{
+    height: 100vh;
+    background-color: #fafafa;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    border-top: .1rem solid #dfdfdf;
+}
+
+.itemDetailContainerItem{
+    padding: 20px;
+}

@@ -1,0 +1,92 @@
+.itemDetailContainerItemDescription{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ItemDescriptionImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: auto;
+    padding: 50px;
+    background: #f0f0f0;
+}
+
+.ItemDescriptionImage img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: ease .8s;
+}
+
+.ItemDescriptionImage img:hover {
+    max-width: 150%;
+    max-height: 150%;
+}
+
+.ItemDescription {
+    margin: 0;
+    height: 400px;
+    width: auto;
+}
+
+.ItemDescription .ItemDescriptionTittle {
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+
+.ItemDescription .ItemDescriptionPrice {
+    font-size: 22px;
+    color: #fbb72c;
+    font-weight: 600;
+}
+
+.ItemDescription .ItemDescriptionPrice small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.ItemDescription .ItemDescriptionResume {
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.ItemDescription .ItemDescriptionColors .dot{
+    height: 25px;
+    width: 25px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: ease .5s;
+    margin-right: 10px;
+}
+
+.ItemDescription .ItemDescriptionColors .dot:hover{
+    border: 2px solid #f0f0f0;
+}
+
+.ItemDescription .ItemDescriptionSize {
+    margin-top: 10px;
+}
+
+.ItemDescription .ItemDescriptionSize .ItemDescriptionSizeInput {
+    background-color: none !important;
+    
+}
+
+.ItemDescription .ItemDescriptionQuantity {
+    display: table-cell;
+    height: 75px;
+    vertical-align: middle;
+}
+
+.ItemDescription .ItemDescriptionQuantityBtn {
+    margin-top: 10px;
+}
