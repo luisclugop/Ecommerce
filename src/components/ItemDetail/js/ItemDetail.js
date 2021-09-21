@@ -26,21 +26,22 @@ class ItemDetail extends Component {
                                     <p>{ description }</p>
                                 </div>
                                 <Row>
-                                    <Col xs={3} sm={4} md={2}>
+                                    <Col xs={3} sm={4} md={3}>
                                         <span>Color: </span>
                                     </Col>
-                                    <Col xs={9} sm={8} md={10}>
+                                    <Col xs={9} sm={8} md={9}>
                                         <div className="ItemDescriptionColors">
                                             <span class="dot"></span>
                                             <span class="dot"></span>
                                         </div>
                                     </Col>
-                                    <Col xs={3} sm={4} md={2}>
+
+                                    <Col xs={3} sm={4} md={3}>
                                         <div className="ItemDescriptionSize">
                                             <span>Talla: </span>
                                         </div>
                                     </Col>
-                                    <Col xs={9} sm={8} md={10}>
+                                    <Col xs={9} sm={8} md={9}>
                                         <div className="ItemDescriptionSize">
                                             <Form.Select size="sm" style={{ backgroundColor: 'rgba(0,0,0,0)', border: '1px solid #eee' }}>
                                                 <option disabled>Selecciona tu talla:</option>
@@ -51,13 +52,13 @@ class ItemDetail extends Component {
                                             </Form.Select>
                                         </div>
                                     </Col>
-
-                                    <Col xs={3} sm={4} md={2}>
+                                    
+                                    <Col xs={3} sm={4} md={3}>
                                         <div className="ItemDescriptionQuantity">
                                             <span>Cantidad: </span>
                                         </div>
                                     </Col>
-                                    <Col xs={4} sm={4} md={4}>
+                                    <Col xs={9} sm={8} md={9}>
                                         <div className="ItemDescriptionQuantityBtn">
                                             <ItemCount />
                                         </div>

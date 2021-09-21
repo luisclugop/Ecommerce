@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./../css/Item.css";
 import ItemCount from '../../ItemCount/js/ItemCount';
+import { Link } from 'react-router-dom';
 
 class Item extends Component {
     render(){
@@ -14,7 +15,8 @@ class Item extends Component {
                     </div>
                     <div className="productDetails">
                         <span className="productCategory">{ category }</span>
-                        <a className="productTitle" href={ titleUrl }>{ title }</a>
+                        {/* <a className="productTitle" href={ titleUrl }>{ title }</a> */}
+                        { <Link to={`/item/${id}`} activeClassName="navlink" className='productTitle'>{ title }</Link> }
                         <p className="productDescription">{ description }</p>
                         <div className="productBottomDetails">
                             <div className="productPrice">

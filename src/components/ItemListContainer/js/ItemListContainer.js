@@ -12,7 +12,6 @@ const ItemListContainer = ({ mensaje }) => {
                 <ItemList />
             </div>
             { <h1>{mensaje}</h1> }
-            <ItemDetailContainer />
         </>
     );
     

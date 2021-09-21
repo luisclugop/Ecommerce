@@ -42,12 +42,12 @@ const ItemDetailContainer = () => {
                         <Row className="justify-content-md-center">
                             <Col xs={12} md={12}>
                                 <ItemDetail 
-                                    src={item.src}
-                                    category={item.category}
-                                    title={item.title}
-                                    description={item.description}
-                                    productReal={item.productReal}
-                                    productDiscount={item.productDiscount}
+                                    src={item?.src}
+                                    category={item?.category}
+                                    title={item?.title}
+                                    description={item?.description}
+                                    productReal={item?.productReal}
+                                    productDiscount={item?.productDiscount}
                                 />
                             </Col>
                         </Row>                    

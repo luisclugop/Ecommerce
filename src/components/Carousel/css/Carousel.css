@@ -5,7 +5,7 @@
 
 .CarouselItem{
     width: 100%;
-    height: 600px;
+    height: 500px;
     background-size: cover;
 }
 
@@ -80,7 +80,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .CarouselItem{
-        height: 500px;
+        height: 450px;
     }
 
     .CarouselItem .CarouselItemTittle{
@@ -97,7 +97,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .CarouselItem{
-        height: 600px;
+        height: 500px;
     }
 
     .CarouselItem .CarouselItemTittle{

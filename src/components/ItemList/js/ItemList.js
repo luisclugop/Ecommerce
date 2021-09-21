@@ -32,14 +32,14 @@ const ItemList = () => {
             { listProducto.map(producto => 
                 <div className="itemListProduct" key={producto.id}>
                     <Item 
-                        badge={producto.badge}
-                        src={producto.src}
-                        category={producto.category}
-                        titleUrl={producto.titleUrl}
-                        title={producto.title}
-                        description={producto.description}
-                        productReal={producto.productReal}
-                        productDiscount={producto.productDiscount}
+                        badge={producto?.badge}
+                        src={producto?.src}
+                        category={producto?.category}
+                        titleUrl={producto?.titleUrl}
+                        title={producto?.title}
+                        description={producto?.description}
+                        productReal={producto?.productReal}
+                        productDiscount={producto?.productDiscount}
                     />
                 </div>
             )}
