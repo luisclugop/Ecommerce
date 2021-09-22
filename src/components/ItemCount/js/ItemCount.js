@@ -2,41 +2,6 @@ import React, { useState } from "react";
 import Button from "../../Button/js/Button";
 import '../css/ItemCount.css';
 
-// class ItemCount extends Component {
-//     constructor(){
-//         super();
-//         this.state = {
-//             count: 0
-//         }
-//     }
-
-//     incrementCount = () => {
-//         this.setState({
-//             count: this.state.count + 1
-//         });
-//     }
-
-//     decrementCount = () => {
-//         this.setState({
-//             count: this.state.count - 1
-//         });
-//     }
-
-//     render(){
-//         let { count } = this.state;
-
-//         return(
-//             <div className="itemCount">
-//                 <Button className="btnLeft" title="-" task={ () => this.decrementCount() } />
-//                 <span className="btnMiddle">{ count }</span>
-//                 <Button className="btnRight" title="+" task={ () => this.incrementCount() } />
-//             </div>
-//         );
-//     }
-// }
-
-// export default ItemCount;
-
 const ItemCount = () => {
 
     const [count, setCount] = useState(1);

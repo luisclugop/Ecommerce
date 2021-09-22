@@ -9,7 +9,7 @@ const NavBar = () => {
     <nav className='NavBar'>
         <div className='LeftNav'>
             <div className='NavOptionsLeft'>
-                <Link to="/" activeClassName="navlink" className='TitleNav Option'>Ecommerce</Link>
+                <Link to="/" className='TitleNav Option'>Ecommerce</Link>
             </div>
         </div>
         <div className='RightNav'>

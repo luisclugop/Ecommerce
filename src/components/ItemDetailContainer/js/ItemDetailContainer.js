@@ -27,7 +27,7 @@ const ItemDetailContainer = () => {
         item.then(result => {
             const listItem = result.find(producto => producto.id === Number(id))
             setListItem(listItem)
-            console.log(listItem);
+            // console.log(listItem);
         })
         return( () => {
             setListItem(undefined)

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Form } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/Collections.css';
 import Button from '../components/Button/js/Button';
@@ -27,14 +27,14 @@ const Collections = () => {
                     <div className="TextCollections">
                       <p className="CategoryCollectionsSmall">Nuevos Diseños</p>
                       <h3 className="TittleCollectionsSmall">Vibra con nuestros {"\n"}diseños</h3>
-                      <a href='#' className="LinkCollectionsSmall">Vamos</a>
+                      <a href='N' className="LinkCollectionsSmall">Vamos</a>
                     </div>
                   </Container>
                   <Container className="collectionsDesignItemsSmall2">
                     <div className="TextCollections">
                       <p className="CategoryCollectionsSmall">Nuevos Diseños</p>
                       <h4 className="TittleCollectionsSmall">Vibra con nuestros {"\n"}diseños</h4>
-                      <a href='#' className="LinkCollectionsSmall">Vamos</a>
+                      <a href='N' className="LinkCollectionsSmall">Vamos</a>
                     </div>
                   </Container>
                 </Col>

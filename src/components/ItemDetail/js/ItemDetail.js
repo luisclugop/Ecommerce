@@ -1,29 +1,32 @@
-import React, { Component } from "react";
+import React from "react";
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/ItemDetail.css';
 import ItemCount from "../../ItemCount/js/ItemCount";
 
 const ItemDetail = ( { item } ) => {
-    console.log(item.title)
+
+    if(!item){
+        return <h1>Cargando</h1>
+    }
+
     return(
         <>
-        <h1>Hola</h1>
-            {/* <Container className="itemDetailContainerItemDescription">
+            <Container className="itemDetailContainerItemDescription">
                 <Row>
                     <Col xs={12} sm={12} md={5} className="justify-content-md-center">
                         <div className="ItemDescriptionImage">
-                            <img src={ item.src } alt=""></img>
+                            <img src={ item?.src } alt=""></img>
                         </div>
                     </Col>
                     <Col xs={12} sm={12} md={7}>
                         <div className="ItemDescription">
-                            <h3 className="ItemDescriptionTittle">{ item.title }</h3>
+                            <h3 className="ItemDescriptionTittle">{ item?.title }</h3>
                             <div className="ItemDescriptionPrice">
-                                <small>{ item.productReal }</small>{ item.productDiscount }
+                                <small>{ item?.productReal }</small>{ item?.productDiscount }
                             </div>
                             <div className="ItemDescriptionResume">
-                                <p>{ item.description }</p>
+                                <p>{ item?.description }</p>
                             </div>
                             <Row>
                                 <Col xs={3} sm={4} md={3}>
@@ -31,8 +34,8 @@ const ItemDetail = ( { item } ) => {
                                 </Col>
                                 <Col xs={9} sm={8} md={9}>
                                     <div className="ItemDescriptionColors">
-                                        <span class="dot"></span>
-                                        <span class="dot"></span>
+                                        <span className="dot"></span>
+                                        <span className="dot"></span>
                                     </div>
                                 </Col>
 
@@ -67,7 +70,7 @@ const ItemDetail = ( { item } ) => {
                         </div>
                     </Col>
                 </Row>                    
-            </Container> */}
+            </Container>
         </>
     );
 }
