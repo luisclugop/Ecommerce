@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/Navbar/js/navbar';
@@ -7,6 +7,7 @@ import Collections from './views/Collections';
 import ItemDetailContainer from './components/ItemDetailContainer/js/ItemDetailContainer';
 
 const App = () => {
+
   
   return (
     <div className="App">
