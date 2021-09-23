@@ -3,20 +3,23 @@ import "./../css/Item.css";
 import ItemCount from '../../ItemCount/js/ItemCount';
 import { Link } from 'react-router-dom';
 
-const Item = ( { id, badge, src, category, titleUrl, title, description, productReal, productDiscount} ) => {
+const Item = ( { item } ) => {
+    
+    // console.log(item);
+
     return(
         <div className="productCard">
-            <div className="badge">{ badge }</div>
+            <div className="badge">{ item?.badge }</div>
             <div className="productTumb">
-                <img src={ src } alt=""></img>
+                <img src={ item?.src } alt=""></img>
             </div>
             <div className="productDetails">
-                <span className="productCategory">{ category }</span>
-                { <Link to={`/item/${ id }`} className='productTitle'>{ title }</Link> }
-                <p className="productDescription">{ description }</p>
+                <span className="productCategory">{ item?.category }</span>
+                { <Link to={`/item/${ item?.id }`} className='productTitle'>{ item?.title }</Link> }
+                <p className="productDescription">{ item?.description }</p>
                 <div className="productBottomDetails">
                     <div className="productPrice">
-                        <small>{ productReal }</small>{ productDiscount }
+                        <small>{ item?.productReal }</small>{ item?.productDiscount }
                     </div>
                     <div className="productItemCount">
                     <ItemCount />

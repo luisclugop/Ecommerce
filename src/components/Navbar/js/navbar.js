@@ -4,7 +4,7 @@ import { NavLink, Link } from 'react-router-dom';
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import CartWidget from '../../CartWidget/js/CartWidget.js';
 
-const NavBar = () => {
+const NavBar = ( {products} ) => {
   return (
     <nav className='NavBar'>
         <div className='LeftNav'>
@@ -16,6 +16,7 @@ const NavBar = () => {
             <div className='NavOptionsRight'>
                 <NavLink to="/" activeClassName="navlink" className='Option'>Home</NavLink>
                 <NavLink to="/Collections" activeClassName="navlink" className='Option'>Collections</NavLink>
+                {products.map(cat => <NavLink key={cat.id} to={`/category/${cat.category}`} activeClassName="navlink" className='Option'>{cat.category}</NavLink>)}
                 <NavLink to="/" activeClassName="navlink" className='Option'><AiOutlineUser /></NavLink>
                 <NavLink to="/" activeClassName="navlink" className='Option'><AiOutlineHeart /></NavLink>
                 <div className='Option'><CartWidget /></div>

@@ -7,15 +7,21 @@ import Collections from './views/Collections';
 import ItemDetailContainer from './components/ItemDetailContainer/js/ItemDetailContainer';
 
 const App = () => {
-
+  const products = [
+    { id: 1, category: 'Men' },
+    { id: 2, category: 'Woman' }
+  ];
   
   return (
     <div className="App">
       <BrowserRouter>
-        <NavBar/>
+        <NavBar products={products}/>
         <Switch>
           <Route exact path="/">
-            <ItemListContainer mensaje="Este es un mensaje"/>
+            <ItemListContainer />
+          </Route>
+          <Route exact path="/category/:category">
+            <ItemListContainer />
           </Route>
           <Route exact path="/Collections">
             <Collections />
