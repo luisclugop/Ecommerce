@@ -2,7 +2,7 @@ import React from "react";
 import Item from "../../Item/js/Item";
 import '../css/ItemList.css'
 
-const ItemList = ( { listProducto } ) => {
+const ItemList = ( { listProducto, productsAdded, addProductFunction } ) => {
 
     if(!listProducto){
         return <h1>Cargando</h1>
@@ -17,6 +17,8 @@ const ItemList = ( { listProducto } ) => {
                     <div className="itemListProduct" key={producto?.id}>
                         <Item
                             item={producto}
+                            productsAdded={productsAdded}
+                            addProductFunction={addProductFunction}
                         />
                     </div>
                 )}

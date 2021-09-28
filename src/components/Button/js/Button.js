@@ -5,7 +5,7 @@ class Button extends Component {
     render(){
         let { title, task, icon } = this.props;
         return(
-            <a className="button1" onClick={ task } href='n'>
+            <a className="button1" onClick={ task }>
                 { title } { icon }
             </a>
         );

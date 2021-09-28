@@ -2,13 +2,13 @@ import React from 'react';
 import '../css/CartWidget.css';
 import { AiOutlineShopping } from "react-icons/ai";
 
-const CartWidget = () => {
+const CartWidget = ({ quantity }) => {
     
     return (
         <div className='cartWidget'>
             <div>
                 <AiOutlineShopping />           
-                <span>0</span>
+                <span>{quantity}</span>
             </div>
         </div>        
     );
