@@ -1,0 +1,38 @@
+.footerDesign{
+    background-color: #f0f0f0;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footerDesign .footerContent{
+    margin: 20px;
+    padding: 10px;
+    border-right: 1px solid #777;
+    text-align: center;
+}
+
+.footerDesign .footerContentRight{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.footerDesign .footerContentRight .listServices{
+    color: #777;
+}
+
+.footerDesign .footerContent .aboutUs span{
+    color: #777;
+}
+
+.footerContentCopyright {
+    text-align: center;
+    padding: 10px;
+    background-color: #818181;
+}
+
+.footerContentCopyright .copyright {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #000;
+}

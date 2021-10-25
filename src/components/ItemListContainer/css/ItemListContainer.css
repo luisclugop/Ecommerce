@@ -1,0 +1,111 @@
+.itemListContainerStyle{
+    padding: 20px;
+    margin: 0;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    /* display: "flex"; */
+    /* align-items: "center";
+    justify-content: "center"; */
+}
+
+.itemListContainerStyle .tittleListContainer{
+    text-align: center;
+    margin: 20px;
+}
+
+.hrEcommerce{
+    color: #fbb72c;
+    border-top: 1px solid #fbb72c;
+    border-radius: 5px;
+    opacity: .9;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.itemListContainerStyle .owlCarouselItemList{
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.itemListContainerStyle .owlCarouselItemList .owlCarouselItem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 60px;
+}
+
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 500px) { 
+    .itemListContainerStyle .owlCarouselItemList{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .itemListContainerStyle .owlCarouselItemList .owlCarouselItem{
+        width: auto;
+        height: 40px;
+    } 
+}
+
+/* Extra small devices (phones, 500px and down) */
+@media only screen and (min-width: 500px) {
+    .itemListContainerStyle .owlCarouselItemList{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .itemListContainerStyle .owlCarouselItemList .owlCarouselItem{
+        width: auto;
+        height: 40px;
+    } 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .itemListContainerStyle .owlCarouselItemList{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .itemListContainerStyle .owlCarouselItemList .owlCarouselItem{
+        width: auto;
+        height: 50px;
+    } 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .itemListContainerStyle .owlCarouselItemList{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .itemListContainerStyle .owlCarouselItemList .owlCarouselItem{
+        width: auto;
+        height: 60px;
+    } 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .itemListContainerStyle .owlCarouselItemList{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .itemListContainerStyle .owlCarouselItemList .owlCarouselItem{
+        width: auto;
+        height: 60px;
+    } 
+}
+
+.itemListContainerStyle .detailsEcommerce .iconBox .iconBoxIcon{
+    font-size: 50px;
+}
+
+.itemListContainerStyle .detailsEcommerce .iconBoxContent .tittleListContainer{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.itemListContainerStyle .detailsEcommerce .iconBoxContent p{
+    color: #777;
+}

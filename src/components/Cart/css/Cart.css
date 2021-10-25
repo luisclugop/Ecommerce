@@ -1,0 +1,131 @@
+.cartStyle{
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cartStyle .cartDesign{
+    margin: 40px 20px 40px 20px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #fff;
+    height: auto;
+    width: auto;
+}
+
+.cartStyle .cartDesign .table th {
+    border-top: none;
+    border-bottom: .1rem solid #ebebeb;
+}
+
+.cartStyle .cartDesign .table th {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #999;
+}
+
+.CartImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: auto;
+    padding: 10px;
+    background: #f0f0f0;
+}
+
+.CartImage img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: ease .8s;
+}
+
+.CartImage img:hover {
+    max-width: 120%;
+    max-height: 120%;
+}
+
+.cartStyle .cartDesign .cartTittle{
+    height: 150px;
+    width: 200px;
+    position: relative;
+}
+
+.cartStyle .cartDesign .cartTittle .tittleCart{
+    color: #fbb72c;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+}
+
+.cartStyle .cartDesign .cartDescription{
+    height: 150px;
+    width: 100px;
+    position: relative;
+}
+
+.cartStyle .cartDesign .cartDescription .descriptionCart{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+}
+
+.cartStyle .cartDesign .cartDescription .descriptionActionCart{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+    cursor: pointer;
+    color: #999;
+    transition: .3s ease;
+}
+
+.cartStyle .cartDesign .cartDescription .descriptionActionCart:hover{
+    color: #fbb72c;
+}
+
+.cartDesignNone{
+    text-align: center;
+}
+
+.cartDesignNone .cartDesignNoneIcon{
+    font-size: 100px;
+    color: #777;
+    line-height: 300px;
+}
+
+.cartDesignNone .cartDesignNoneDescription{
+    font-size: 20px;
+    color: #777;
+}
+
+.cartTotalProducts{
+    background-color: #f0f0f0;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    border: .1rem dashed #d7d7d7;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cartTotalProducts .tittleCart{
+    font-weight: 400;
+}
+
+.cartTotalProducts .cartSubTotalProducts{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartTotalProducts .totalProceedPay{
+    color: #fbb72c;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.cartTotalProducts .cartSubTotalProductsPay{
+    display: grid;
+}

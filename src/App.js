@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/Navbar/js/navbar';
 import ItemListContainer from './components/ItemListContainer/js/ItemListContainer';
-import Collections from './views/Collections';
 import ItemDetailContainer from './components/ItemDetailContainer/js/ItemDetailContainer';
 import Cart from "./components/Cart/js/Cart";
-
-export const TestContext = React.createContext();
+import CartContext from "./context/CartContext";
+import FooterPage from "./components/Footer/js/Footer";
+import Stripe from "./components/Stripe/js/Stripe";
 
 const App = () => {
   const products = [
@@ -15,34 +15,30 @@ const App = () => {
     { id: 2, category: 'Woman' }
   ];
 
-  const [cartProducts, setCartProduct] = useState([]);
-  
   return (
-    <div className="App">
-      <BrowserRouter>
-        <NavBar products={products} cartProducts={cartProducts}/>
-
-        <TestContext.Provider value={'prueba'}>
-          <Switch>
-            <Route exact path="/">
-              <ItemListContainer productsAdded={cartProducts} addProductFunction={setCartProduct}/>
-            </Route>
-            <Route exact path="/category/:category">
-              <ItemListContainer productsAdded={cartProducts} addProductFunction={setCartProduct}/>
-            </Route>
-            <Route exact path="/item/:id">
-              <ItemDetailContainer productsAdded={cartProducts} addProductFunction={setCartProduct} />
-            </Route>
-            <Route exact path="/cart">
-              <Cart productsAdded={cartProducts} addProductFunction={setCartProduct} />
-            </Route>
-            <Route exact path="/Collections">
-              <Collections />
-            </Route>
-          </Switch>
-        </TestContext.Provider>
-      </BrowserRouter>
-    </div>
+      <div className="App">
+        <BrowserRouter>
+          <CartContext>
+            <NavBar products={products} />
+            <Switch>
+              <Route exact path="/">
+                <ItemListContainer />
+              </Route>
+              <Route exact path="/category/:category">
+                <ItemListContainer />
+              </Route>
+              <Route exact path="/productos/:id">
+                <ItemDetailContainer />
+              </Route>
+              <Route exact path="/cart">
+                <Cart />
+              </Route>
+            </Switch>
+            <Stripe></Stripe>
+            <FooterPage></FooterPage>
+          </CartContext>
+        </BrowserRouter>
+      </div>
   );
 }
 

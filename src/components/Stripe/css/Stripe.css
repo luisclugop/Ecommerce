@@ -1,0 +1,13 @@
+.stripe{
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.stripe .stripeContentDetails{
+    padding-right: 50px;
+}

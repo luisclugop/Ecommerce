@@ -1,5 +1,5 @@
 .itemDetailContainer{
-    height: 100vh;
+    height: auto;
     background-color: #fafafa;
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -8,5 +8,5 @@
 }
 
 .itemDetailContainerItem{
-    padding: 20px;
+    padding: 20px 20px 50px 20px;
 }

@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/ItemDetail.css';
 import ItemCount from "../../ItemCount/js/ItemCount";
 
-const ItemDetail = ( { item, productsAdded, addProductFunction } ) => {
+const ItemDetail = ( { item } ) => {
     const product = item;
     // console.log(stock);
 
@@ -25,7 +25,7 @@ const ItemDetail = ( { item, productsAdded, addProductFunction } ) => {
                         <div className="ItemDescription">
                             <h3 className="ItemDescriptionTittle">{ item?.title }</h3>
                             <div className="ItemDescriptionPrice">
-                                <small>{ item?.productReal }</small>{ item?.productDiscount }
+                                <small>${ item?.productReal }</small>${ item?.productDiscount }
                             </div>
                             <div className="ItemDescriptionResume">
                                 <p>{ item?.description }</p>
@@ -68,8 +68,6 @@ const ItemDetail = ( { item, productsAdded, addProductFunction } ) => {
                                     <div className="ItemDescriptionQuantityBtn">
                                         <ItemCount 
                                             product={product}
-                                            productsAdded={productsAdded}
-                                            addProductFunction={addProductFunction}
                                         />
                                     </div>
                                 </Col>

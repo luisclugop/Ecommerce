@@ -2,9 +2,9 @@ import React from "react";
 import Item from "../../Item/js/Item";
 import '../css/ItemList.css'
 
-const ItemList = ( { listProducto, productsAdded, addProductFunction } ) => {
+const ItemList = ( { productos } ) => {
 
-    if(!listProducto){
+    if(!productos){
         return <h1>Cargando</h1>
     }
 
@@ -13,12 +13,10 @@ const ItemList = ( { listProducto, productsAdded, addProductFunction } ) => {
     return (
         <>
             <div className="itemList">
-                { listProducto.map(producto => 
+                { productos.map(producto => 
                     <div className="itemListProduct" key={producto?.id}>
                         <Item
-                            item={producto}
-                            productsAdded={productsAdded}
-                            addProductFunction={addProductFunction}
+                            productos={producto}
                         />
                     </div>
                 )}
